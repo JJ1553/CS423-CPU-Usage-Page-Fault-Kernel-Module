@@ -13,7 +13,7 @@ For case study 1, two different sets of workloads were run to observe how memory
 
 The accumulated page faults over time are shown below:
 
-![Case Study 1 Work 1 and 2](case_1_work_1_2.png)
+![Case Study 1 Work 1 and 2](plots/case_1_work_1_2.png)
 
 In this run, both processes used random access patterns. Because of this, the working set was spread across memory and pages were less likely to be reused before being evicted. This caused a steady increase in page faults throughout execution. The total accumulated page faults reached roughly 397,000 by the end of the run.
 
@@ -28,7 +28,7 @@ The workload with 50000 accesses also ran longer and contributed more to the tot
 
 The accumulated page faults over time are shown below:
 
-![Case Study 1 Work 3 and 4](case_1_work_3_4.png)
+![Case Study 1 Work 3 and 4](plots/case_1_work_3_4.png)
 
 In this run, the second process used locality based memory access instead of random access. Because of this, memory accesses were more concentrated instead of being spread uniformly across the full allocation, which reduced the number of page faults. The accumulated page faults increased more slowly and reached roughly 295,000 total faults.
 
@@ -69,7 +69,7 @@ For each run:
 
 The resulting graph is shown below:
 
-![Case Study 2 - CPU Utilization vs Degree of Multiprogramming for 200MB Random Locality 10000 Access Workloads](case_2.png)
+![Case Study 2 - CPU Utilization vs Degree of Multiprogramming for 200MB Random Locality 10000 Access Workloads](plots/case_2.png)
 
 ### Observations
 
