@@ -1,3 +1,12 @@
 readme: 5
 comment: 5
 fp ops: 2.5
+compile no warn: 2.5
+read/write: 5
+char dev: 10
+buffer alloc/free: 10
+mmap: 25
+workqueue delay: 5
+workqueue handler: 10
+case 1 study: 10
+case 2 study: 10
